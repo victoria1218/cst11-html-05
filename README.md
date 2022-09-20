@@ -1,31 +1,32 @@
-# Defining Styles
+# Tables, Blocks and Dynamic Changes
 
-We have looked at Inline Styles, where the style is defined inside an HTML Tag.  A better approach to use an *embedded* style, where the style is included in a style tag.
+We will be introducting 3 topics today, but not looking at each of them in much detail:
+* tables
+* display blocks
+* dynamic changes to styles
 
-Open the page1.html document and see how this can be used.
+# Tables
+Tables used to be used quite a lot for organizing web pages, but this has fallen out of favor since the inception of Styles for layouts.  Tables are still great for organizing data, and we can style them as well.
 
-* A tag can include multiple styles. They are separated by a space
-* Multiple styles can be defined in the style tag, they are separated by a comma
-* A class is defined with a dot (.) followed by the name of the class
-* A class definition can be assigned to a specific tag, but can be a global class
-* An ID is defined with a hashtag (#) followed by the name of the id
-* An ID can be assigned to a specific element, but ID's should be unique
+Open the file tables.html and look at the content.
+This is a pretty boring table, with no additions.  However, we are going to add a whole lot of styles all at once.
+Add the following text into your <head></head>
+```
+ <link rel="stylesheet" href="tablestyle.css">
+ ```
+ This adds an external document into your html.  It is a way of importing your styles from another file.  Open up tablestyle.css and see what it looks like.
 
-# What is the difference between an ID and a Class?
+ ## Assignment
+ Visit https://www.w3schools.com/css/css_table.asp to see more examples of styles with tables.  Open the file tableassignment.html.  There is some text data here. Your assignment is to add the html and style this page to create a more esthetically appealing page.
 
-An ID is intended for unique elements on the page. Think about a button that does a task, like a Save Button.  You only have 1 Save button on a page.
-A Class is a reusable style.  Maybe you have a roster for a team, and all of the Tanks need to have one style, and all the Smashers need to have another style.
 
-# Positioning
+ # Display Blocks
+ We are only going to touch on these briefly, just to see an alternative to layers. Open the file: blocks.html
+ Notice the intoduction of nested <div> tags to organize the page into sections.  We will use blocks more later on in this course after we introduce some programming basics
 
-You can put multiple sections on a page, kind of like using text boxes in Microsoft Word.  We use the position style.  Today we will look at the most basic position: absolute
-
-This creates floating elements in the page, where you set the position in pixels from the top/left of the page, and you set the width and the height.
-Look at page2.html for an example.
-
-How do you put one element in front of another if they overlap? Z-index
-
+ # Dynamic Style Changes
+Scripting languages can be used to modify a page dynamically.  Doing so requires the use of Javascript.  We can use core javascript, or we can use a wrapper.  If you open the document dynamic.html, you will see an example of core javascript as well as the use of a wrapper called Jquery.  
 
 ## Assignment
+Add some buttons to the document.html page and create some styles that you can change dynamically.
 
-Style the document called document1.html using embedded Styles.  Use layouts to make the page look better. Work in full screen mode so we don't have to worry about cropping the page. You will need to add all the proper elements to make this a proper html document.
